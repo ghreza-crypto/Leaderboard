@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(248, 246, 244);
+}
+
+.title {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.leaderBoard {
+  width: 40%;
+  margin: 50px auto;
+  background-color: white;
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+}
+
+.addScoreForm {
+  display: flex;
+  flex-direction: column;
+}
