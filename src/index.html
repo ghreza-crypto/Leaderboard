@@ -12,16 +12,16 @@
     <h1 class="title">Leader Board</h1>
     <div class="leaderBoard">
         <div>
-            <span>Recent scores</span3>
-                <button>Refresh</button>
+            <span>Recent scores</span>
+                <button type="button" id="refreshButton">Refresh</button>
                 <div class="leaderBoardList" id="leaderBoardList"></div>
         </div>
         <div>
             <form action="#" class="addScoreForm">
                 <h2>Add your score</h2>
-                <input type="text" name="name" id="name" placeholder="enter your name"><br>
-                <input type="text" name="score" id="score" placeholder="enter your score"><br>
-                <button type="button">Submit</button>
+                <input type="text" name="name" id="name" placeholder="enter your name" required autocomplete="off"><br>
+                <input type="text" name="score" id="score" placeholder="enter your score" required autocomplete="off"><br>
+                <button type="button" id="addScoreButton">Submit</button>
             </form>
         </div>
     </div>
