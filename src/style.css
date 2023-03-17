@@ -8,15 +8,32 @@ body {
 }
 
 .leaderBoard {
-  width: 40%;
+  width: 50%;
   margin: 50px auto;
   background-color: white;
   display: flex;
-  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   justify-content: space-around;
 }
 
 .addScoreForm {
   display: flex;
   flex-direction: column;
+}
+
+.leaderBoardList {
+  border: 1px solid black;
+  padding: 3px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+button {
+  border: none;
+  height: 25px;
 }
