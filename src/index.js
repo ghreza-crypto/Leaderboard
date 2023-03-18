@@ -20,10 +20,13 @@ const listPlayer = async () => {
   const scores = await getScores();
   leaderBoardList.innerHTML = '';
   scores.forEach((score) => {
-    const el = document.createElement('div');
-    el.innerHTML = `${score.user}: ${score.score}`;
-    leaderBoardList.appendChild(el);
+    const tr = document.createElement('tr');
+    const td = document.createElement('td');
+    td.innerHTML = `${score.user}: ${score.score}`;
+    leaderBoardList.appendChild(tr);
+    tr.appendChild(td);
   });
 };
 addScoreButton.addEventListener('click', addScore);
 refreshButton.addEventListener('click', listPlayer);
+document.addEventListener('DOMContentLoaded', listPlayer, false);
